@@ -1,7 +1,8 @@
   :root {
-      --color-bg: #ffffff;
+      --color-bg: #150E1F;
       --color-text: #000000;
-      --color-accent: #c6a15b; /* oro */
+      --color-accent: #c6a15b;
+/*      --color-accent: #FF2490; /* rosa */
     }
 
     * {
@@ -109,9 +110,10 @@ header.scrolled {
     }
 
     .about {
-  padding: 4rem 2rem;
+  padding: 6rem 2rem;
   background-color: #000;
   color: #fff;
+
 }
 
 .about-content {
@@ -154,7 +156,7 @@ header.scrolled {
               url('assets/img/miriam-bio.jpg') center/cover no-repeat;
   color: #fff;
   padding: 4rem 2rem;
-  min-height: 100vh; /* per centrare verticalmente */
+  min-height: 50vh; /* per centrare verticalmente */
   text-align: center;
 }
 
