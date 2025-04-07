@@ -91,7 +91,59 @@
   </div>
 </section>
 
+<section class="faq">
+  <h2>Domande Frequenti</h2>
 
+  <div class="faq-item">
+    <h3>Quali tecniche imparerò?</h3>
+    <p>Durante il corso di canto metal imparerai le tecniche di <strong>Growl</strong> e <strong>Scream</strong>, le più utilizzate nel genere.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>Ho bisogno di esperienza musicale?</h3>
+    <p>Assolutamente no! Il corso è adatto a <strong>tutti i livelli</strong>, dai principianti ai più esperti. Le lezioni vengono personalizzate in base alle tue esigenze.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>Cosa mi serve per studiare?</h3>
+    <p>Puoi seguire le lezioni comodamente da casa! Ti serviranno:</p>
+    <ul>
+      <li>Un <strong>computer</strong> o <strong>dispositivo mobile</strong></li>
+      <li>Una <strong>connessione Internet stabile</strong></li>
+      <li>Una <strong>webcam</strong></li>
+      <li>Un <strong>microfono</strong></li>
+    </ul>
+  </div>
+
+  <div class="faq-item">
+    <h3>Quanto durano le lezioni?</h3>
+    <p>Ogni lezione dura <strong>1 ora</strong>, una volta a settimana.<br>
+    In totale: <strong>4 ore di formazione intensiva al mese</strong>.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>Chi è l’insegnante?</h3>
+    <p>Il corso è tenuto da <strong>Miriam Granatello</strong>, professionista del settore con esperienza specifica nel canto metal.<br>
+    Scopri di più nella sezione <a href="/chi-sono">Chi Sono</a> del sito.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>Quando posso iniziare?</h3>
+    <p><strong>Quando vuoi!</strong> Dopo l’iscrizione, sarai contattato per organizzare le tue lezioni direttamente con l’insegnante.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>Quanto costa il corso?</h3>
+    <p>Il corso <strong>GrowlingUP</strong> è in <strong>offerta speciale a 119€</strong> (anziché 150€).<br>
+    Il prezzo include <strong>1 mese di corso</strong> con <strong>una lezione a settimana per 4 settimane</strong>.<br>
+    Pagamenti accettati: <strong>PayPal</strong> e tutte le <strong>carte di credito/debito</strong>.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>Come posso iscrivermi?</h3>
+    <p>Compila il <a href="#modulo">modulo d’iscrizione</a> per essere ricontattato e organizzare l’inizio delle lezioni!</p>
+  </div>
+</section>
 
 
   <script>
@@ -102,6 +154,17 @@
     } else {
       header.classList.remove('scrolled');
     }
+  });
+
+    document.addEventListener("DOMContentLoaded", function () {
+    const items = document.querySelectorAll(".faq-item");
+
+    items.forEach(item => {
+      const header = item.querySelector("h3");
+      header.addEventListener("click", () => {
+        item.classList.toggle("open");
+      });
+    });
   });
 </script>
 

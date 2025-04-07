@@ -1,7 +1,7 @@
   :root {
-      --color-bg: #150E1F;
-      --color-text: #000000;
-      --color-accent: #c6a15b;
+      --color-bg: #050505;
+      --color-text: #fff;
+      --color-accent: #B0A4A4;
 /*      --color-accent: #FF2490; /* rosa */
     }
 
@@ -63,7 +63,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -111,9 +111,6 @@ header.scrolled {
 
     .about {
   padding: 6rem 2rem;
-  background-color: #000;
-  color: #fff;
-
 }
 
 .about-content {
@@ -265,8 +262,6 @@ text-align: center;
 }
 
 .time-friendly {
-  background-color: #000;
-  color: white;
   padding: 4rem 2rem;
   min-height: 360px;
   justify-content: center;
@@ -279,13 +274,90 @@ text-align: center;
 
 .section-subtitle {
   font-size: 1.2rem;
-  color: white;
   text-align: center;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
 }
+
+.faq {
+  max-width: 800px;
+  margin: 4rem auto;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.faq h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--color-accent);
+}
+
+.faq-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+  padding: 1rem 0;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.faq-item:hover {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+.faq-item h3 {
+  cursor: pointer;
+  position: relative;
+  padding: 0.5rem 2rem 0.5rem 0;
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--color-text);
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.faq-item h3::after {
+  content: "▼";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
+  font-size: 1rem;
+}
+
+.faq-item.open h3::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.faq-item p,
+.faq-item ul {
+  max-height: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0 0 0 1.5rem;
+  opacity: 0;
+  transition: opacity 0.3s ease, max-height 0.4s ease;
+  color: #eee;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.faq-item.open p,
+.faq-item.open ul {
+  max-height: 500px;
+  opacity: 1;
+  padding-top: 1rem;
+}
+
+.faq-item ul {
+  list-style: disc;
+}
+
+
 
 
 
